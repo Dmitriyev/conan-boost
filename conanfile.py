@@ -38,7 +38,7 @@ class BoostConan(ConanFile):
     default_options.append("without_python=True")
     default_options = tuple(default_options)
 
-    url = "https://github.com/conan-community/conan-boost"
+    url = "https://github.com/Dmitriyev/conan-boost.git/"
     homepage = "https://www.boost.org"
     topics = ("conan", "boost", "portable", "library", "framework")
     license = "BSL-1.0"
