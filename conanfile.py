@@ -58,10 +58,10 @@ class BoostConan(ConanFile):
     def configure(self):
         if self._zip_bzip2_requires_needed:
             self.requires("bzip2/1.0.6@conan/stable")
-            self.options["bzip2"].shared = False
+            # self.options["bzip2"].shared = False
             
             self.requires("zlib/1.2.11@conan/stable")
-            self.options["zlib"].shared = False
+            # self.options["zlib"].shared = False
 
     def package_id(self):
         if self.options.header_only:
